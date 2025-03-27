@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm a passionate developer creating awesome websites.</p>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a web developer skilled in HTML, CSS, and JavaScript. I have a strong passion for creating interactive, user-friendly, and visually appealing websites. My goal is to bridge the gap between design and development to create seamless digital experiences.</p>
+        <img src="images/about.jpg" alt="About Image" class="about-img">
+    </section>
+    
+    <section id="services">
+        <h2>My Services</h2>
+        <p>I offer web development, UI/UX design, and SEO optimization.</p>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="images/web-development.jpg" alt="Web Development Image">
+                <h3>Web Development</h3>
+                <p>Creating responsive, user-friendly websites tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/ui-ux-design.jpg" alt="UI/UX Design Image">
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive and visually appealing interfaces for better user experience.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/seo.jpg" alt="SEO Optimization Image">
+                <h3>SEO Optimization</h3>
+                <p>Enhancing website visibility and search engine rankings to drive more traffic.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here are some of my recent projects:</p>
+        <div>
+            <h3>Project 1: E-Commerce Website</h3>
+            <p>Designed and developed a fully functional e-commerce website with shopping cart and payment integration.</p>
+            <img src="images/ecommerce.jpg" alt="E-Commerce Project">
+        </div>
+        <div>
+            <h3>Project 2: Portfolio Website</h3>
+            <p>Created a clean and interactive portfolio website to showcase skills, projects, and experience.</p>
+            <img src="images/portfolio.jpg" alt="Portfolio Project">
+        </div>
+        <div>
+            <h3>Project 3: Blogging Platform</h3>
+            <p>Developed a blogging platform with user authentication and content management system.</p>
+            <img src="images/blog.jpg" alt="Blogging Platform">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaboration or projects.</p>
+        <img src="images/contact.jpg" alt="Contact Image" class="contact-img">
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> example@example.com</p>
+            <p><strong>Phone:</strong> +1234567890</p>
+            <p><strong>Address:</strong> 123 Street Name, City, Country</p>
+        </div>
+        
+        <div class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
